@@ -1,3 +1,4 @@
+
 .bg-green-gradient{
     width: 100%;
     background: -webkit-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(74, 181, 94) 100%)
@@ -13,26 +14,26 @@
 }
 
 .txt-21px-white{
-    font-family: 'Cabin', sans-serif;
+    font-family: 'Baloo 2', cursive;
     font-size: 21px;
     color: white;
 
 }
 
 .txt-36px-white{
-    font-family: 'Cabin', sans-serif;
+    font-family: 'Baloo 2', cursive;
     font-size: 36px;
     color: white;
 }
 
 @media only screen and (max-width: 768px) {
     .txt-36px-white{
-        font-family: 'Cabin', sans-serif;
+        font-family: 'Baloo 2', cursive;
         font-size: 36px;
         color: black;
     }
     .txt-21px-white{
-        font-family: 'Cabin', sans-serif;
+        font-family: 'Baloo 2', cursive;
         font-size: 21px;
         color: black;
     

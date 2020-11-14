@@ -1,0 +1,118 @@
+.bg-green-gradient{
+    width: 100%;
+    background: -webkit-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(74, 181, 94) 100%)
+}
+
+.height-75px{
+    height: 48px;
+    width: 51px;
+}
+.txt{
+    font-family: 'Cabin', sans-serif;
+    font-size: 24px;
+}
+
+.txt-21px-white{
+    font-family: 'Cabin', sans-serif;
+    font-size: 21px;
+    color: white;
+
+}
+
+.txt-36px-white{
+    font-family: 'Cabin', sans-serif;
+    font-size: 36px;
+    color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    .txt-36px-white{
+        font-family: 'Cabin', sans-serif;
+        font-size: 36px;
+        color: black;
+    }
+    .txt-21px-white{
+        font-family: 'Cabin', sans-serif;
+        font-size: 21px;
+        color: black;
+    
+    }
+  }
+
+.height-400px{
+    height: 400px;
+}
+
+.bg-gray{
+    background-color: rgb(66, 65, 65);
+}
+.txt-24px-gray{
+    color: rgb(194, 194, 194);
+    font-size: 24px;
+}
+.txt-16px-gray{
+    color: rgb(194, 194, 194);
+    font-size: 16px;
+}
+
+.txt-header{
+    font-size: 24px;
+    font-weight: bold;
+}
+.txt-header-plus{
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(194, 194, 194);
+}
+.hieght-75px{
+    height: 75px;
+}
+.btn-start-custom{
+    box-sizing: border-box;
+    height: 45px;
+    width: 182px;
+    background: none;
+    border: 2px solid rgb(0, 176, 94);
+    text-align: center !important;
+    user-select: none;
+    font-family: 'Cabin', sans-serif !important;
+    font-size: 18px !important; 
+    font-weight: bold !important;
+    color: rgb(0, 176, 94);
+    line-height: 1;
+    border-radius: 20px !important;
+}
+
+.bg-gray-footer{
+    background-color: rgb(245, 245, 245);
+}
+.txt-domify{
+    color: rgb(199, 199, 199);
+    font-size: 10px;
+    font-family: 'Cabin', sans-serif;
+}
+.nav-link{
+    color: black !important;
+    font-size: 12px !important;
+}
+
+.txt-terms{
+    font-size: 14px;
+    color: rgb(120, 118, 118);
+}
+
+.btn-back-custom{
+    box-sizing: border-box;
+    height: 40px;
+    width: 140px;
+    background: none;
+    border: 2px solid rgb(0, 176, 94);
+    text-align: center;
+    user-select: none;
+    font-family: 'Cabin', sans-serif !important;
+    font-size: 18px !important; 
+    font-weight: bold !important;
+    color: black;
+    line-height: 1;
+    border-radius: 20px !important;
+}

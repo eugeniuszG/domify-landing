@@ -48,12 +48,16 @@
     background-color: rgb(66, 65, 65);
 }
 .txt-24px-gray{
-    color: rgb(194, 194, 194);
+    color:rgb(194, 194, 194);
     font-size: 24px;
 }
 .txt-16px-gray{
     color: rgb(194, 194, 194);
-    font-size: 16px;
+    font-size: 18px;
+}
+.txt-24px-dark-grey{
+    color: rgb(66, 65, 65);
+    font-size: 24px;
 }
 
 .txt-header{
@@ -78,7 +82,6 @@
     user-select: none;
     font-family: 'Cabin', sans-serif !important;
     font-size: 18px !important; 
-    font-weight: bold !important;
     color: rgb(0, 176, 94);
     line-height: 1;
     border-radius: 20px !important;
@@ -112,7 +115,6 @@
     user-select: none;
     font-family: 'Cabin', sans-serif !important;
     font-size: 18px !important; 
-    font-weight: bold !important;
     color: black;
     line-height: 1;
     border-radius: 20px !important;

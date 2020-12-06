@@ -26,18 +26,54 @@
     color: white;
 }
 
+.txt-21px-white-buttom{
+    font-family: 'Baloo 2', cursive;
+    font-size: 21px;
+    color: white;
+    display: none;
+
+}
+
+.txt-36px-white-buttom{
+    font-family: 'Baloo 2', cursive;
+    font-size: 36px;
+    color: white;
+    display: none;
+}
+
 @media only screen and (max-width: 768px) {
-    .txt-36px-white{
-        font-family: 'Baloo 2', cursive;
-        font-size: 36px;
-        color: black;
-    }
     .txt-21px-white{
         font-family: 'Baloo 2', cursive;
         font-size: 21px;
-        color: black;
+        display: none;
     
     }
+    
+    .txt-36px-white{
+        font-family: 'Baloo 2', cursive;
+        font-size: 36px;
+        color: white;
+        display: none;
+    }
+    
+    .txt-21px-white-buttom{
+        font-family: 'Baloo 2', cursive;
+        font-size: 21px;
+        color: white;
+        display: block;
+    
+    }
+    
+    .txt-36px-white-buttom{
+        font-family: 'Baloo 2', cursive;
+        font-size: 36px;
+        color: white;
+        display: block;
+    }
+    .block-mobile{
+        display: block !important;
+    }
+
   }
 
 .height-400px{
@@ -53,11 +89,12 @@
 }
 .txt-16px-gray{
     color: rgb(194, 194, 194);
-    font-size: 18px;
+    font-size: 16px;
 }
 .txt-24px-dark-grey{
-    color: rgb(66, 65, 65);
-    font-size: 24px;
+    font-family: 'Cabin', sans-serif;
+    color:#424141 !important;
+    font-size: 24px !important;
 }
 
 .txt-header{

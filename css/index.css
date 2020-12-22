@@ -10,20 +10,25 @@
 }
 .txt{
     font-family: 'Cabin', sans-serif;
+    font-weight: bold;
     font-size: 24px;
 }
 
 .txt-21px-white{
     font-family: 'Baloo 2', cursive;
-    font-size: 21px;
+    font-size: 24px;
     color: white;
+    
 
 }
 
-.txt-36px-white{
+.txt-42px-white{
     font-family: 'Baloo 2', cursive;
-    font-size: 36px;
+    font-size: 44px;
     color: white;
+    line-height: 1.5;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
 
 .txt-21px-white-buttom{
@@ -49,9 +54,9 @@
     
     }
     
-    .txt-36px-white{
+    .txt-42px-white{
         font-family: 'Baloo 2', cursive;
-        font-size: 36px;
+        font-size: 42px;
         color: white;
         display: none;
     }
@@ -77,18 +82,18 @@
   }
 
 .height-400px{
-    height: 400px;
+    height: 490px;
 }
 
 .bg-gray{
     background-color: rgb(66, 65, 65);
 }
-.txt-24px-gray{
-    color:rgb(194, 194, 194);
+.txt-24px-white{
+    color:white;
     font-size: 24px;
 }
-.txt-16px-gray{
-    color: rgb(194, 194, 194);
+.txt-16px-white{
+    color: white;
     font-size: 16px;
 }
 .txt-24px-dark-grey{
@@ -107,24 +112,26 @@
     color: rgb(194, 194, 194);
 }
 .hieght-75px{
-    height: 75px;
+    height: 45px;
 }
 .btn-start-custom{
-    box-sizing: border-box;
-    height: 45px;
-    width: 182px;
+
+    height: 53px;
+    width: 143px;
     background:-webkit-linear-gradient(left, rgb(44, 176, 71) 0%, rgb(244, 255, 140) 100%);
-    border: none !important;
-    text-align: center !important;
-    user-select: none;
-    font-family: 'Cabin', sans-serif !important;
-    font-size: 21px !important; 
-    color: white !important;
-    line-height: 1;
-    border-radius: 20px !important;
+    text-align: center;
+    vertical-align: middle !important;
+    padding-top: 8px;
+    font-family: 'Cabin', sans-serif;
+    font-size: 21px ;
+    color: white ;
+    border-radius: 35px;
+    text-decoration: none;
 }
 .btn-start-custom:hover {
-    background-color: yellow;
+    background: rgb(235,225,127);
+    text-decoration: none;
+    color: white;
   }
 
 .bg-gray-footer{

@@ -12,13 +12,18 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex, nofollow" />
     <link rel="shortcut icon" href="./images/logo_favicon.png" type="image/x-icon">
+    <!-- css link -->
     <link rel="stylesheet" href="css/index.css">
+
+    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
     <meta name="facebook-domain-verification" content="za2gvrgew4oa3s0myabp1xn5xxaglc" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>Domify</title>
@@ -26,60 +31,196 @@
 </head>
     <body>
         <div class="container-fluid">
-            <div class="container-fluid mt-3">
-                <div class="row">
-                    <div class="d-flex my-md-auto">
-                        <img src="images/Logo.png" alt="logo" class="height-75px  ml-sm-5">
-                        <p class="ml-2 align-center mt-2 txt">Domify</p>
+            <div class="container">
+                <div class="row my-1">
+                    <div class="col-6">
+                        <div class="d-flex">
+                            <img src="images/logo_favicon.png" alt="logo" class="height-75px  ml-sm-5 mt-1">
+                            <a href="https://domifybot.pl" class=" ml-2 align-center txt kontakt my-auto">Domify</a>
+                        </div>
+                    </div>
+                    <div class="col-6 my-auto">
+                        <div class="txt text-right mr-sm-5 pr-sm-5">
+                            <a class="kontakt" id="kontakt">Kontakt</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <section class="container-fluid bg-green-gradient">
-            <div class="row py-3">
-                <div class="col-md-6 my-md-auto mx-auto ">
-                    <div class="pt-md-5 mt-md-5 pr-md-3 mr-md-3 ">
-                        <div class="text-md-right text-center txt-21px-white">Znajdż nowe mieszkanie</div>
-                        <div class="text-md-right text-center txt-42px-white">szybko i wygodnie</div>
+        <section class="bg-green-gradient ">
+            <div class="z-index_-1 position-relative ">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-interval="1000">
+                          <img src="./images/slide_1.jpg" class="d-block w-100 opacity-02 h-450px" alt="image">
+                          <img src="./images/slide_1_mobile.jpg" class="d-block w-100 opacity-02 h-pic-700px" alt="image">
+                      </div>
+                      <div class="carousel-item " data-interval="1000">
+                        <img src="./images/slide_2.jpg" class="d-block w-100 opacity-02 h-450px" alt="image">
+                        <img src="./images/slide_2_mobile.jpg" class="d-block w-100 opacity-02 h-pic-700px" alt="image">
+                      </div>
+                      <div class="carousel-item" data-interval="1000">
+                        <img src="./images/slide_3.jpg" class="d-block w-100 opacity-02 h-450px" alt="image">
+                        <img src="./images/slide_3_mobile.jpg" class="d-block w-100 opacity-02 h-pic-700px" alt="image">
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            
+            <div class="row py-3 position-relative z-index_0 margin-iphone">
+                <div class="col-md-7 col-6">
+                    <div class="pr-md-3 mr-md-3  d-inline">
+                        <div class="text mt-5 pt-5">
+                            <div class="text-md-right text-center txt-42px-white">Szukaj nowego mieszkania</div>
+                            <div class="text-md-right text-center txt-42px-white">w messengerze</div>
+                        </div>
+                        <div class="d-flex align-items-end flex-column mt-4">
+                            <button class="btn-start-custom btn-hide" id="mainStart">Zacznij</button>
+                        </div>
+                        
                     </div>
                 </div>
-                <div class="col-md-6 ">
+                <div class="col-md-5 ">
                     <div class="text-center text-md-left ml-sm-3" id="animation">
-                        <img src="./images/iphone.png" alt="How it looks like" class="height-400px my-3">
+                        <img src="./images/iphone.png" alt="How it looks like" id="iphone" class="height-400px pb-md-4 pb-5">
                     </div>
                 </div>
-                <div class="col-md-6  mx-auto">
-                    <div class="">
-                        <div class="text-md-right text-center txt-21px-white-buttom">Znajdż nowe mieszkanie</div>
-                        <div class="text-md-right text-center txt-36px-white-buttom">szybko i wygodnie</div>
+                <div class="col-md-6  mx-auto shift-div">
+                    <div class="text-center hiden">
+                        <div class="text-md-right text-center txt-36px-white-buttom">Szukaj nowego mieszkania</div>
+                        <div class="text-md-right text-center txt-36px-white-buttom">w messengerze</div>
+                        <button id="hidenBtnStart" class="btn-start-custom hiden">Zacznij</button>
+                    </div>
+                </div>
+            </div>
+
+            
+        </section>
+
+
+        <section id="introduction">
+            <div class="containter text-center">
+                <div class="text-center txt-lato-18px mt-5 mt-md-5">                    
+                    <b>Domify</b> monitoruje 📡 ogłoszenia o wynajmie mieszkań w Warszawie<br> na najpopularniejszych serwisach i wysyła je w messengerze.
+                </div>
+                <div class="text-center ">
+                    <button id="benefits" class="btn-intro mx-3 mt-md-5 mt-3">Korzyści</button>
+                    <button id="scope" class="btn-intro mx-3 mt-md-5 mt-3">Obszar działania</button>
+                    <button id="contact-middle" class="btn-intro mx-3 mt-md-5 mt-3">Kontakt</button>
+                </div>
+                <div class="text-center my-md-4 my-3 p-3">
+                    <img class="img-logo-domify" src="./images/logo_favicon.png" alt="domify">
+                </div>
+            </div>
+        </section>
+
+        <section id="title">
+            <div class="container-fluid bg-green">
+                <div class="text-center py-5 txt-36px-baloo2">
+                    Korzyści Domify
+                </div>                
+            </div>
+        </section>
+
+        <section >
+            <div  class="bg-gray-footer py-5">
+                <div class="container d-flex">
+                    <div class="d-md-flex py-5 row w-100">
+                        <div class="col-md-8 col-12 text-md-left">
+                            <h1 id="speed" class="h2-baloo2"><b>Szybkość</b></h1>
+                            <p class="regular-lato-18px">Otrzymasz nowe oferty zaraz po ich opublikowaniu -  bądź pierwszym, który je zobaczy 🥇</p>
+                        </div>
+                        <div class="col-md-4 col-12 text-md-left text-center">
+                            <img id="rocket" class="svg-size" src="./images/animation_1.svg" alt="rocket">
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="description bg-gray py-5">
-            <div class="container-fluid mt-5">
-                <h1 class="txt-24px-white text-center">Dzięki <b>Domify</b>, nie przegapisz najnowszych ofert<br> wynajmu mieszkań w Warszawie 🏠. </h1>
-                <div class="mx-auto mb-5 mt-3">
-                    <div class="txt-16px-white text-center pt-2">dla Twojej wygody monitorujemy 📡  ogłoszenia na najpopularniejszych serwisach<br> i wysyłamy je do ciebie w messengerze. Wszystko w jednym miejscu!</div>
+
+        <section >
+            <div  class="py-5">
+                <div class="container d-flex">     
+                    <div class="d-md-flex py-5 row w-100 mx-auto">
+                        <div class="col-12 text-md-left display-none-mobile">
+                            <h1 id="flexebilityVisible" class="h2-baloo2"><b>Elastycznyczność</b></h1>
+                            <p class="regular-lato-18px">Po określeniu kryteriów wyszukiwania, będziesz otrzymywać tylko odpowiednie dla Ciebie opcje 🎯</p>
+                         </div>
+                        <div class="col-md-4 col-12 text-center text-md-left justify-content-center">
+                            <img id="flexability" class="svg-size" src="./images/animation_3.svg" alt="staring">
+                        </div>
+                        <div class="col-md-8 col-12 text-md-left display-none">
+                            <h1 id="flexebilityVisible" class="h2-baloo2"><b>Elastycznyczność</b></h1>
+                            <p class="regular-lato-18px">Po określeniu kryteriów wyszukiwania, będziesz otrzymywać tylko odpowiednie dla Ciebie opcje 🎯</p>
+                        </div>
+                    </div>  
                 </div>
             </div>
         </section>
+
+
+        <section >
+            <div  class="bg-gray-footer py-5">
+                <div class="container d-flex">
+                    <div class="d-md-flex py-5 row w-100">
+                        <div class="col-md-8 col-12 text-md-left ">
+                            <h1 id="agregationVisible" class="h2-baloo2"><b>Zbiera wszystkie oferty</b></h1>
+                            <p class="regular-lato-18px">Wszystkie oferty będą w jednym miejscu - w twoim messengerze 🔔 Domify monitoruje ogłoszenia na olx, otodom, gumtree itd.</p>
+                        </div>
+                        <div class="col-md-4 col-12 text-md-left text-center">
+                            <img id="agregation" class="svg-size" src="./images/animation_2.svg" alt="rocket">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="map ">
+            <div class="text-center ">
+                <h2 class="mt-5 h2-baloo2-28px">Domify funkcjonuje w następujących miastach</h2>
+                <div class="d-flex justify-content-center">
+                    <img class="" src="./images/poland_map.jpg" alt="poland map">
+                    <h3 class="my-auto warszawa pt-4 ">Warszawa</h3>
+                </div>               
+            </div>
+  
+        </section>
+
+
 
         <section class="start">
-            <div class="container">
-                <div class="header text-center mt-5">
-                    <div class="txt-24px-dark-grey"> Już dostępny w Facebook Messenger</div>
-                </div>
-
-                <div class="d-flex justify-content-center my-5">
+            <div class="container-fluid bg-gray-footer pt-5 text-center">
+                <div class="mt-5 mb-2">
                     <img src="images/msg_logo.png" alt="" class="height-75px">
                 </div>
-                <div class="d-flex justify-content-center pb-5">
-                    <a href="https://www.facebook.com/domifybot/" type="link" class="btn-start-custom">start</a>
+                <div class="text-center">
+                    <div class="txt-green-baloo-28px">Nie musisz nic instalować</div>
+                    <div class="regular-lato-18px " id="tryDomify">Domify jest dostępny bezpośrednio w twoim Messengerze.</div>
+                </div>
+
+                <div class="pb-5 mt-5 pt-3">
+                    <a href="https://www.facebook.com/domifybot/" class="btn-start-footer">Spróbować Domify</a>
                 </div>
             </div>
+        </section>
+
+        <section id="kontakt-form">
+            <div class="bg-green">
+                <div class="container py-5">
+                    <div class="row d-flex">
+                        <div class="col-md-6 col-12 mx-auto my-auto pl-md-5 text-md-left text-center">
+                            <h3 id="h3-proposal" class="txt-green-baloo-28px" style="color: white;">Chcesz wynająć mieszkanie?</h3>
+                            <p class="regular-lato-18px text-left" style="color: white;">Możesz opublikować swoją ofertę w naszem bocie.<br>Skontaktuj się z nami, aby uzyskać więcej szczegółów.</p>
+                        </div>
+                        <div class="col-md-6 col-12 text-center my-auto ">
+                            <button style="width: 180px;" class="btn-start-custom">Napisz do nas</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </section>
 
         <section class="footer bg-gray-footer">
@@ -96,16 +237,19 @@
                     </li>
                 </ul>
                 <div class="text-center py-2 txt-domify">
-                    <div class="ml-sm-5">© Domify - ООО «Парасоль»</div>
+                    <div  class="ml-sm-5">© Domify - ООО «Парасоль»</div>
                 </div>
 
             </div>
             
         </section>
 
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    
+    <script src="./js/anime.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+    <script src="./js/index.js"></script>    
+    <script src="./js/animation.js"></script>    
     </body>
 </html>

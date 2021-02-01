@@ -35,7 +35,7 @@ function dealWithScrolling(e) {
         anime({
             targets: '#rocket',
             translateX: '-680px',
-            easing: 'easeOutCubic',
+            easing: 'easeOutQuint',
             duration: 1200
         });
     }
@@ -43,19 +43,20 @@ function dealWithScrolling(e) {
         anime({
             targets: '#flexability',
             translateX: '45rem',
-            easing: 'easeOutCubic',
+            easing: 'easeOutQuint',
             duration: 1200
         });
     }
+
     if (isFullyVisible(agregationAnimation)) {
         anime({
             targets: '#agregation',
             translateX: '-780px',
-            easing: 'easeOutCubic',
+            easing: 'easeOutQuint',
             duration: 1200
         });
-        
-    }    
+    } 
+       
 }
 
 function isFullyVisible(el) {
@@ -72,7 +73,7 @@ function isFullyVisible(el) {
 //animation for iphone
 anime({
     targets: '#iphone',
-    translateX: '-95rem',
+    translateX: '-94rem',
     easing: 'easeOutCubic',
     duration: 1500
 });

@@ -27,7 +27,7 @@
 }
 
 .h2-baloo2-28px{
-    font-family: 'Baloo 2', cursive;
+    font-family: 'Baloo 2', cursive !important;
     font-size: 28px !important;
 }
 .txt-green-baloo-28px{
